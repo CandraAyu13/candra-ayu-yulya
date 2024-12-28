@@ -1,0 +1,457 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* my code */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* navbar */
+.header {
+  width: 100%;
+  background-color: #020617;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+.nav {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 250px;
+  align-items: center;
+}
+.nav h3 {
+  color: aliceblue;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: bold;
+}
+.nav h3 span,
+.nav a:hover {
+  color: #facc15;
+}
+.nav ul {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+.nav a {
+  color: #97a8c1;
+  font-size: small;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+/* hero page */
+.content-hero {
+  background-color: #111827;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 62px;
+  z-index: 1;
+}
+.hero-page {
+  color: #97a8c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 610px;
+  gap: 280px;
+}
+.box-hero-describe,
+.describe {
+  width: 40%;
+  line-height: 30px;
+}
+.box-hero-describe h4,
+.information p span {
+  text-transform: capitalize;
+  color: #facc15;
+}
+.box-hero-describe a,
+.describe a,
+.text-area-btn a {
+  text-align: center;
+  width: 100px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #020617;
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  background-color: #facc15;
+  border-radius: 10px;
+}
+.box-hero-describe h2 {
+  color: aliceblue;
+  text-transform: capitalize;
+  font-size: xx-large;
+  font-weight: bold;
+}
+.hero-cover {
+  overflow: hidden;
+}
+
+.hero-cover {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-cover img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 300px;
+}
+
+.box-hero-image {
+  overflow: hidden;
+  border-radius: 20px;
+  border: 3px solid #facc15;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+.box-hero-image:hover {
+  transform: rotate(50deg) scale(1.25);
+  border-radius: 20px;
+  border: 3px solid #facc15;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+
+/* About me */
+.content-about-me {
+  color: #97a8c1;
+  background-color: #020617;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-me {
+  height: 700px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.image {
+  border-radius: 30px;
+  border: 5px solid #facc15;
+  width: 410px;
+  height: 410px;
+  overflow: hidden;
+}
+
+.image img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 410px;
+}
+
+.describe h2 {
+  font-weight: bold;
+  font-size: xx-large;
+  text-transform: capitalize;
+  color: aliceblue;
+}
+span {
+  color: #facc15;
+}
+
+/*my-portfolio*/
+.content-portfolio {
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  background-color: #020617;
+}
+.content-portfolio .portfolio {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box-information-portfolio {
+  color: #97a8c1;
+  height: 200px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.box-information-portfolio h2,
+.box-information-portfolio p {
+  width: 400px;
+  height: 80px;
+}
+.box-information-portfolio h2 {
+  text-transform: capitalize;
+  font-size: xx-large;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.box-portfolio-parent {
+  display: flex;
+  justify-content:center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.box-portfolio {
+  width: 300px;
+  min-height: 300px;
+  border: 2px solid #facc15;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #facc15;
+}
+
+.portfolio-cover-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.portfolio-cover-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* footer style */
+.footer {
+  height: 1000px;
+  background-color: #020617;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-me {
+  color: #97a8c1;
+  width: 80%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.contact-me-describe {
+  width: 60%;
+  height: 150px;
+  text-align: center;
+}
+.contact-me-describe h2,
+.about-me-footer h2 {
+  color: aliceblue;
+  margin-bottom: 40px;
+  font-size: xx-large;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.contact-me-form {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-me-form .information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  color: aliceblue;
+  width: 350px;
+  height: 250px;
+}
+.contact-me-form .text-area-btn {
+  width: 550px;
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.text-area-btn .text-area-name input {
+  background-color: #97a8c1;
+  width: 350px;
+  height: 60px;
+  opacity: 0.1;
+}
+.text-area-btn .text-area-massage input {
+  background-color: #97a8c1;
+  width: 540px;
+  height: 150px;
+  opacity: 0.1;
+}
+.about-me-footer {
+  width: 40%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.box1 {
+  color: #97a8c1;
+  text-align: center;
+  width: 100%;
+  height: 150px;
+}
+.box2 {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
