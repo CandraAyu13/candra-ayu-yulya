@@ -129,12 +129,15 @@
         </div>
         <div class="text-area-btn">
           <div class="text-area-name">
-            <input type="text" title="Nama" />
+            <input type="text" name="nama" id="nama" placeholder="Input Nama"/>
+          </div>
+          <div class="text-area-name">
+            <input type="email" name="email" id="email" placeholder="Input Email" />
           </div>
           <div class="text-area-massage">
-            <input type="text" title="Massage" />
+            <input type="text" name="massage" id="message" placeholder="Message?"/>
           </div>
-          <a href="#">contact us</a>
+          <button class="btn" type="button" onclick="postData()">contact us</button>
         </div>
       </div>
     </div>
@@ -156,6 +159,7 @@
       </div>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

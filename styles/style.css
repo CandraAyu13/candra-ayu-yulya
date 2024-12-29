@@ -484,17 +484,37 @@ span {
 }
 
 .text-area-btn .text-area-name input {
-  background-color: #97a8c1;
+  background-color: white;
   width: 350px;
   height: 60px;
-  opacity: 0.1;
+  border: none;
+  outline: none;
 }
 
 .text-area-btn .text-area-massage input {
-  background-color: #97a8c1;
+  background-color: white;
   width: 540px;
   height: 150px;
-  opacity: 0.1;
+  outline: none;
+  border: none;
+}
+
+input {
+  border-radius: 20px;
+}
+
+.btn {
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 20px;
+  border: none;
+  background-color: #facc15;
+  width: 150px;
+  padding: 15px;
+}
+
+.btn:active {
+  scale: 0.9;
 }
 
 .about-me-footer {
